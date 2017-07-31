@@ -1,4 +1,9 @@
 
+
+<body>
+
+
+
 <html>
   <head>
   <title>Richard Wayne Shieh </title>
@@ -12,9 +17,8 @@
 	<link rel="Shortcut Icon" href="https://jonphillips.ca/favicon.ico" type="image/x-icon">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://jonphillips.ca/style.css?3" type="text/css" media="screen">
-  </head>
-  <body>
-	<div class = "container">
+  </head> 
+	<main  class = "container">
 		<section class="content">
 			<h1>Richard.W.Shieh</h1>
 			<h2>About</h2>
@@ -31,29 +35,30 @@
 		  	<a href="mailto:richard.w.shieh@hotmail.com" title="Email Richard Shieh">Contact</a>
 		</section>
 		
-	</div>
-	  
+	</main>
+	
 	<footer>
 	  	<a class="wx" href="https://wx.qq.com/" title="Richard Shieh on WeChat">
 			<span class="icon-wechat"></span>
-	  		</a>
+	  	</a>
 	  	<a class="wb" href="http://weibo.com/p/1005052651506751/home?from=page_100505&mod=TAB&is_all=1#place" title="Richard Shieh on Weibo-SINA">
 			<span class="icon-weibo"></span>
-	  		</a>
+	  	</a>
 	  	<a class="qqzone" href="https://user.qzone.qq.com/1046671914/infocenter" title="Richard Shieh on QQ">
 			<span class="icon-qq"></span>
-	  		</a>
+	  	</a>
 	</footer>
+
 	<script>
 		var showText = function (target, message, index, interval) {    
-		if (index < message.length) { 
-			$(target).append(message[index++]); 
-			setTimeout(function () { showText(target, message, index, interval); }, interval); 
-							} 
-						}
+			if (index < message.length) { 
+				$(target).append(message[index++]); 
+				setTimeout(function () { showText(target, message, index, interval); }, interval); 
+			} 
+		}
 			$(function () { 
 				showText("#desc", "User Interface Designer", 0, 100);    
-					}); 	
+			}); 	
 	<script>
   </body>
 	  
