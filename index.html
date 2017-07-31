@@ -34,15 +34,15 @@
 			<span class="icon-qq"></span>
 	  		</a>
 	  <script>
-		var showText = function (target, message, index, interval) {    
-	if (index < message.length) { 
-		$(target).append(message[index++]); 
-		setTimeout(function () { showText(target, message, index, interval); }, interval); 
-	} 
-}
-$(function () { 
-	showText("#desc", "User Interface Designer", 0, 100);    
-}); 
-		  <script>
+			var showText = function (target, message, index, interval) {    
+		if (index < message.length) { 
+			$(target).append(message[index++]); 
+			setTimeout(function () { showText(target, message, index, interval); }, interval); 
+							} 
+						}
+			$(function () { 
+				showText("#desc", "User Interface Designer", 0, 100);    
+					}); 
+		 <script>
 	</body>
 </html>
