@@ -33,5 +33,15 @@
 	  	<a class="qqzone" href="https://user.qzone.qq.com/1046671914/infocenter" title="Richard Shieh on QQ">
 			<span class="icon-qq"></span>
 	  		</a>
-	  <script></script>
+	  <script>
+		var showText = function (target, message, index, interval) {    
+	if (index < message.length) { 
+		$(target).append(message[index++]); 
+		setTimeout(function () { showText(target, message, index, interval); }, interval); 
+	} 
+}
+$(function () { 
+	showText("#desc", "User Interface Designer", 0, 100);    
+}); 
+		  <script>
 	</body>
