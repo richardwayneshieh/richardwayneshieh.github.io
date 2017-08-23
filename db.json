@@ -1,0 +1,43 @@
+{
+  "answers": [
+    {
+      "id": 1
+    },
+    {
+      "q1": 1,
+      "q2": "Front-end",
+      "q3": "Javascript",
+      "id": 2
+    },
+    {
+      "q1": 0,
+      "q2": "Front-end",
+      "q3": "jQuery",
+      "id": 3
+    },
+    {
+      "q1": 1,
+      "q2": "FrontEnd",
+      "q3": "CSS",
+      "id": 4
+    },
+    {
+      "q1": -1,
+      "q2": "Front-end",
+      "q3": "Javascript",
+      "id": 5
+    },
+    {
+      "q1": -1,
+      "q2": "Front-End",
+      "q3": "CSS",
+      "id": 6
+    },
+    {
+      "q1": 1,
+      "q2": "FrontEnd",
+      "q3": "eCharts",
+      "id": 7
+    }
+  ]
+}

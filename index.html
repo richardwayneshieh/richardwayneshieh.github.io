@@ -1,44 +1,619 @@
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
 
 <head>
-    <title>Richard Wayne Shieh </title>
+    <title>Richard</title>
     <meta charset="utf-8">
     <meta name="description" content="Richard Shieh,Await Respectfully">
-    <meta name="keywords" content="Richard Shieh, design, designer, developer, Montreal, Canada, UX, usability, typography, css, html, jQuery, PHP, user experience, user interface, BuySellAds, Contrastly">
     <meta name="author" content="Richar Shieh">
-    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="https://jonphillips.ca/apple-touch-icon.png">
-    <link rel="Shortcut Icon" href="https://jonphillips.ca/favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://jonphillips.ca/style.css?3" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://jonphillips.ca/style.css?3" type="text/css" media="screen" />
+    <link href="bootstrap-3.3.7-dist\css\hover.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'PT Sans', sans-serif;
+            font-size: .900em;
+            color: white;
+        }
+        
+        .main {
+            background-color: #3a75bc;
+            text-align: center;
+            padding: 30px 0;
+            height: 550px;
+            display: block;
+        }
+        
+        .main.container section.content h1 {
+            color: #21211f;
+            padding: 0;
+            letter-spacing: -0.1rem;
+            font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 900;
+            border: 0;
+            vertical-align: baseline;
+            margin: 0;
+        }
+        
+        .main.container section.content a {
+            text-align: center;
+            margin: 0 auto;
+            display: inline-block;
+            width: auto;
+            font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 300;
+            background-color: #3a75bc;
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+            color: #fff;
+            transition: all 0.5s ease;
+            border: 0px
+        }
+        
+        .main h2 {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            margin: 30px
+        }
+        
+        .main p {
+            margin: 0 auto;
+            font-weight: bold;
+            font-size: 1.3em;
+            width: 900px;
+            display: block;
+            line-height: 1.3em;
+            padding-top: 40px;
+        }
+        
+        .main .button {
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 3px solid #b31d3d;
+            background: #3a75bc;
+            padding: 17px 60px 17px 50px;
+            margin: 1000px 20px 20px 20px;
+            text-align: center;
+            color: white;
+            line-height: 15em;
+        }
+        
+        .second {
+            background-color: #3366a4;
+            height: 380px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .second .hobby {
+            margin: auto;
+            text-align: center;
+            padding: 0 12%;
+        }
+        
+        .second .hobby h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #b31d3d;
+            display: inline-block;
+            margin: 30px
+        }
+        
+        .third {
+            height: 270px;
+            padding: 50px 200px;
+            display: block;
+            background-color: aliceblue
+        }
+        
+        .third_1 {
+            height: 350px;
+            background-image: url(http://wx1.sinaimg.cn/mw690/9e0ac83fly1fiiitcd445j20qo0f0aax.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+        }
+        
+        .third_1 .practice .box {
+            background-color: #b31d3d;
+            width: 210px;
+            height: 50px;
+            margin: 10px 100px;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        .third_1 .practice h3 {
+            width: 1400px;
+            margin: 10px 200px 60px 200px;
+            word-spacing: 6px;
+            line-height: 40px;
+            font-weight: lighter;
+            font-size: 1.8em;
+            color: #b31d3d;
+        }
+        
+        .forth {
+            height: 400px;
+            margin: 60px 0 30px 0;
+            color: #b31d3d;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        
+        .forth h4 {
+            font-size: 1.9em;
+            margin: 60px 0 30px 0;
+            color: #3a75bc;
+            font-weight: bold;
+        }
+        
+        .forth p {
+            width: 800px;
+            color: #a4b6c4;
+            font-size: 1.360em;
+            margin: 10px auto;
+            font-weight: lighter;
+        }
+        
+        .fifth {
+            height: 350px;
+            background-color: #aedfe4;
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+        .fifth .education .box {
+            background-color: #3a75bc;
+            width: 230px;
+            height: 50px;
+            margin: 10px 100px;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        .fifth .education ul {
+            width: 1400px;
+            margin: 10px 200px 60px 200px;
+            word-spacing: 6px;
+            line-height: 40px;
+            font-weight: lighter;
+            font-size: 1.8em;
+            color: white;
+            padding-top: 50px;
+        }
+        
+        .sixth {
+            display: block;
+            height: 490px;
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: block;
+            background-color: aliceblue
+        }
+        
+        .sixth .skill .box {
+            background-color: #3a75bc;
+            width: 230px;
+            height: 50px;
+            margin: 200px 100px;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        .seventh {
+            height: 700px;
+            background-image: url(http://wx1.sinaimg.cn/mw1024/9e0ac83fly1fiiifmvamrj20np0hsjsu.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+        }
+        
+        .seventh h4 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #21211f;
+            display: inline-block;
+            padding: 130px 700px;
+            /* margin: 40px 300px 90px auto; */
+        }
+        
+        .seventh .footer {
+            display: inline-block;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            margin: 0px 770px;
+        }
+        
+        footer {
+            display: block;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
 </head>
 
+
+
 <body>
-    <div id="loading" style="display: none;">&nbsp;</div>
-    <h1 style="margin-top: 0px;"></h1>
     <main class="container">
         <section class="content">
-            <h1>Richard.W.Shieh</h1>
-            <p id="desc"> Studying For Master's Degree In HIT</p>
-            <a href="mailto:richard.w.shieh@hotmail.com" title="Email Richard Shieh">Contact</a>
+            <h1 style="font-size:6.0rem">Richard.W.Shieh</h1>
+            <a href=" mailto:richard.w.shieh@hotmail.com " title="Email Richard Shieh  ">Contact</a>
         </section>
     </main>
 
-
-    <div class="image">
-        <div class="image fixed" id="brady_01" style="height: 716px; margin-top: 0px;">
-            <div class="backstretch" style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px;"><img src="/images/background/brady_01.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px;"></div>
+    <section class="main">
+        <h2>HELLO.</h2>
+        <h2 style="font-size: 2.5em;">Let Me Tell You Something About myself.</h2>
+        <p> I'm happy for your visiting and hope you can know much about me. I am an outgoing, sociable postgraduate student in HIT. I am modest, warm-hearted and treat people sincerely. I have self-confidence to solve problem, and I am good at team work
+            at the same time. I I have good professional ability, and have rich practical experience.My mayjor is <b>Urban Planning</b>.<b> I am waitting for you repectfully</b>!</p>
+        <div class="@-webkit-keyframes hvr-bob">
+            <a class="button" href="richard.w.shieh@hotmail.cpm">Check my sample reels</a>
         </div>
-        <div class="backstretch" style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px;"><img src="/images/background/brady_01.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px;"></div>
-        <img src="/images/background/brady_01.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px;">
+        <div class="@-webkit-keyframes hvr-bob">
+            <a class="button" href="richard.w.shieh@hotmail.cpm">Download my resume.</a>
+        </div>
+    </section>
+
+    <section class="second">
+        <div class="hobby">
+            <table border="2px">
+                <tr border="5px">
+                    <td><img src="http://cdn.mos.cms.futurecdn.net/b69afdcf3b851d54ee0d276bcb3ffee6-650-80.jpg" width="280" height="280" /></td>
+                    <td><img src="https://s-media-cache-ak0.pinimg.com/564x/c2/8d/d1/c28dd15fb78cf5303bd2d1d461bf2484.jpg" width="280" height="280" /> </td>
+                    <td><img src="https://s-media-cache-ak0.pinimg.com/564x/cf/9e/10/cf9e103aa8d1b4ad474e3590fc16c468.jpg" width="280" height="280" /></td>
+                    <td><img src="https://s-media-cache-ak0.pinimg.com/564x/cb/36/05/cb360521e78476a90796f0ee796e4039.jpg" width="280" height="280" /></td>
+                </tr>
+                <tr>
+                    <td align="center">Music</td>
+                    <td align="center">Drama</td>
+                    <td align="center">Travel</td>
+                    <td align="center">Food</td>
+                    <td text-align="center"></td>
+                </tr>
+            </table>
+            <h2>My Hobby</h2>
+        </div>
+
+        <div class="quotation">
+            <h1 style="margin-top: 100px;">
+                <span class="quote" style="display: block; margin:auto;width:900px;color:#21211f;text-align:center;font-size:1.5em">“If I could I would always work in silence and obscurity, and let my efforts be known by their results.”</span>
+                <small style="display: block; margin:0 auto;width:900px;color:#21211f;text-align:center;margin-top: 80px;">EMILY BRONTE</small>
+            </h1>
+        </div>
+    </section>
+
+    <section class="third">
+    </section>
+    <section class="third_1">
+        <div class="practice">
+            <br />
+            <br />
+            <div class="box">
+                <p>Practice</p>
+            </div>
+            <h3>Practice has made great progress <br/>in my professional ability<br/><br/>Knowledge can improve the quality of knowledge, and experience can improve the knowledge itself.</h3>
+
+        </div>
+    </section>
+    <section class="forth">
+        <h4>Corporation <b>I had worked as a trainee urban planner</b></h4>
+        <ul style="color:#a4b6c4;font-size:1.1rem">
+            <li>Inner Mongolia Urban Planning & Municipal Engineering Design Research Institute</li>
+            <br/>
+            <li>Inner Mongolia Xinya architectural design limited liability company</li>
+        </ul>
+        <h4>My role on this project</h4>
+        <p>The preliminary research,scheme discussion and mapping drawing of city planning project</p>
+    </section>
+    <section class="fifth">
+        <div class="education">
+            <br />
+            <br />
+            <div class="box">
+                <p>Education</p>
+            </div>
+            <ul>
+                <li>2011-2016 Northwest A&F university</li>
+                <li>2016-2018 Harbin Insititute of Technology(shenzhen)</li>
+            </ul>
+            <div style="width:338px; height:350px;float:right;background-color:#3366a4;float: right; margin: -310px 0 0 0;text-align:center;font-size:2.5em;color:#aedfe4">
+                Award<br/><br/><br/>too many to list <br/><br/>haha
+            </div>
+        </div>
+
+    </section>
+    <section class="sixth">
+        <div class="skill">
+            <br />
+            <br />
+            <div class="box">
+                <p>Skill</p>
+            </div>
+        </div>
+    </section>
+    <section class="seventh">
+        <h4> keep in touch.</h4>
+        <div class="footer">
+            <div class="hvr-float">
+                <a class="fa fa-qq" style="font-size:36px;color:black" style="font-size:36px" href="https://user.qzone.qq.com/1046671914/infocenter " title="Richard Shieh on QQ"></a>
+            </div>
+            <div class="hvr-float">
+                <a class="fa fa-weixin" style="font-size:36px;color:black" style="font-size:36px" href="https://wx.qq.com/ " title="Richard Shieh on WeChat "></a>
+            </div>
+            <div class="hvr-float">
+                <a class="fa fa-weibo" style="font-size:36px;color:black" style="font-size:36px" href="http://weibo.com/p/1005052651506751/home?from=page_100505&mod=TAB&is_all=1#place " title="Richard on Weibo-SINA "></a>
+            </div>
+            <div class="hvr-float">
+                <a class="fa fa-facebook-official" style="font-size:36px;color:black" href="https://www.facebook.com/" title="Richard on Facebook "></a>
+            </div>
+            <div class="hvr-float">
+                <a class="fa fa-twitter" style="font-size:36px;color:black" style="font-size:36px" style="font-size:36px" href="https://www.twitter.com/" title="Richard on Twitter "></a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="hvr-float">
+            <a class="fa fa-github" style="font-size:36px" href="https://github.com/ " title="Richard on Github "></a>
+        </div>
+        <div class="hvr-float">
+            <a class="fa fa-dropbox" style="font-size:36px" href="https://www.drobox.com/" title="Richard on Dropbox "></a>
+        </div>
+        <div class="hvr-float">
+            <a class="fa fa-youtube" style="font-size:36px" href="https://www.youtube.com/ " title="Richard on Youtube "></a>
+        </div>
+        <div class="hvr-float">
+            <a class="fa fa-pinterest" style="font-size:36px" style="font-size:36px" href="https://www.pinterest.com/ " title="Richard on Pinterest "></a>
+        </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-- 
+
+    <meta property="og:url" content="http://vitor.cc">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:image:secure_url" content="favicon.png">
+    <meta property="og:title" content="Web &amp; Mobile Product Designer | Vtr">
+    <meta property="og:description" content="I'm a Senior Product Designer based on Rio de Janeiro. I build awesome things for Web and Mobile. I hope you enjoy my work.">
+    <meta property="og:site_name" content="Vitor.cc">
+    <meta property="og:type" content="portfolio">
+
+    <! Javascript -->
+<!-- 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/kudos.js"></script>
+    <script src="https://rawgithub.com/masukomi/kudos/master/jquery.cookie.js"></script>
+
+    <script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/f9343f57d93d96dec564e56807a98638.js" async="async"></script> -->
+
+<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+<!-- 
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/vtr.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <script src="//w.sharethis.com/button/st_insights.js?product=filament&amp;publisher=74792445-f0b9-4a8d-90c4-04af7fa0876e-53879" id="st_insights_js"></script> -->-->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+
+<html dir="ltr " lang="en-US ">
+
+<head>
+    <title>Richard Wayne Shieh </title>
+    <meta charset="utf-8 ">
+    <meta name="description " content="Richard Shieh,Await Respectfully ">
+    <meta name="keywords " content="Richard Shieh,HIT ">
+    <meta name="author " content="Richar Shieh ">
+    <meta name="robots " content="index, follow ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <link href="/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css " rel="stylesheet ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <style>
+        container {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            color: #21211f;
+            font-size: 5.0rem;
+            letter-spacing: -0.1rem;
+            font-family: "Raleway ", "Helvetica Neue ", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 900;
+            display: block;
+            box-sizing: inherit;
+            padding-top: 180px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 390px;
+        }
+        
+        p {
+            color: #21211f;
+            font-size: 1.03rem;
+            line-height: 0;
+            letter-spacing: 0.135rem;
+            margin: -0.35rem 0 0 0;
+            font-family: monospace;
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 0.0px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 390px;
+        }
+        
+        a {
+            text-align: center;
+            margin: 0 auto;
+            display: inline-block;
+            width: auto;
+            font-family: "Raleway ", "Helvetica Neue ", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 300;
+            background: #e22a25;
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+            color: #fff;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=”container”>
+        <div class=”row”>
+            <h1>Richard.W.Shieh</h1>
+            <p>谢宗翰 Studying For Master's Degree In HIT</p>
+            <a href="mailto:richard.w.shieh@hotmail.com " title="Email Richard Shieh ">Contact</a>
+        </div>
+    </div>
+
+    <footer>
+        <a class="tw " href="https://twitter.com/jophillips " title="Jon Phillips on Twitter "><span class="icon-twitter "></span></a>
+        <a class="fb " href="https://www.facebook.com/jo.phillips " title="Jon Phillips on Facebook "><span class="icon-facebook "></span></a>
+        <a class="ig " href="https://www.instagram.com/phillips_jon/ " title="Jon Phillips on Instagram "><span class="icon-instagram "></span></a>
+        <a class="li " href="https://www.linkedin.com/in/jonathancphillips " title="Jon Phillips on LinkedIn "><span class="icon-linkedin "></span></a>
+    </footer>
+
+    <script>
+        var showText = function(target, message, index, interval) {
+            if (index < message.length) {
+                $(target).append(message[index++]);
+                setTimeout(function() {
+                    showText(target, message, index, interval);
+                }, interval);
+            }
+        }
+        $(function() {
+            showText("#desc ", "User Interface Designer ", 0, 100);
+        });
+    </script>
+</body>
+
+</html> -->
+
+
+<!-- <html>
+
+<head>
+    <title>Richard Wayne Shieh </title>
+    <meta charset="utf-8 ">
+    <meta name="description " content="Richard Shieh,Await Respectfully ">
+    <meta name="keywords " content="Richard Shieh,HIT ">
+    <meta name="author " content="Richar Shieh ">
+    <meta name="robots " content="index, follow ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <link rel="apple-touch-icon " href="https://jonphillips.ca/apple-touch-icon.png ">
+    <link rel="Shortcut Icon " href="https://jonphillips.ca/favicon.ico " type="image/x-icon ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <link rel="stylesheet " href="https://jonphillips.ca/style.css?3 " type="text/css " media="screen ">
+    <style>
+        h1 {
+            style=color: #21211f;
+            font-size: 6.0rem;
+            padding: 11.8rem;
+            letter-spacing: -0.1rem;
+            font-family: " Raleway ", "Helvetica Neue ", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading " style="display: none; ">&nbsp;</div>
+    <h1 style="margin-top: 0px; "></h1>
+    <main class="container ">
+        <section class="content ">
+            <h1>Richard.W.Shieh</h1>
+            <p id="desc ">谢宗翰 Studying For Master's Degree In HIT</p>
+            <a href="mailto:richard.w.shieh@hotmail.com " title="Email Richard Shieh ">Contact</a>
+        </section>
+    </main> 
+
+ <div class="image ">
+        <div class="image fixed " id="brady_01 " style="height: 716px; margin-top: 0px; ">
+            <div class="backstretch " style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px; "><img src="/images/background/brady_01.jpg " style="position: absolute;
+                margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px; "></div>
+        </div>
+        <div class="backstretch " style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px; "><img src="/images/background/brady_01.jpg " style="position: absolute; margin:
+                0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px; "></div>
+        <img src="/images/background/brady_01.jpg " style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px; ">
     </div>
     </div>
-    <div class="image fixed" id="brady_02" style="height: 716px; margin-top: 0px; z-index: 1;">
-        <div class="backstretch" style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px;"><img src="/images/background/brady_02.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px;"></div>
+    <div class="image fixed " id="brady_02 " style="height: 716px; margin-top: 0px; z-index: 1; ">
+        <div class="backstretch " style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px; "><img src="/images/background/brady_02.jpg " style="position: absolute; margin:
+                0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px; "></div>
     </div>
-    <div class="backstretch" style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px;"><img src="/images/background/brady_02.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px;"></div>
-    <img src="/images/background/brady_02.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px;">
+    <div class="backstretch " style="left: 0px; top: 0px; position: absolute; overflow: hidden; z-index: 0; margin: 0px; padding: 0px; height: 716px; width: 1073.66px; "><img src="/images/background/brady_02.jpg " style="position: absolute; margin:
+                0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px; "></div>
+    <img src="/images/background/brady_02.jpg " style="position: absolute; margin: 0px; padding: 0px; border: none; z-index: 0; width: 1073.66px; height: 716px; left: -295.832px; top: 0px; ">
     </div>
     </div>
 
@@ -55,14 +630,14 @@
 
 
     <footer>
-        <a class="wx" href="https://wx.qq.com/" title="Richard Shieh on WeChat">
-            <span class="icon-wechat"></span>
+        <a class="wx " href="https://wx.qq.com/ " title="Richard Shieh on WeChat ">
+            <span class="icon-wechat "></span>
         </a>
-        <a class="wb" href="http://weibo.com/p/1005052651506751/home?from=page_100505&mod=TAB&is_all=1#place" title="Richard Shieh on Weibo-SINA">
-            <span class="icon-weibo"></span>
+        <a class="wb " href="http://weibo.com/p/1005052651506751/home?from=page_100505&mod=TAB&is_all=1#place " title="Richard Shieh on Weibo-SINA ">
+            <span class="icon-weibo "></span>
         </a>
-        <a class="qqzone" href="https://user.qzone.qq.com/1046671914/infocenter" title="Richard Shieh on QQ">
-            <span class="icon-qq"></span>
+        <a class="qqzone " href="https://user.qzone.qq.com/1046671914/infocenter " title="Richard Shieh on QQ ">
+            <span class="icon-qq "></span>
         </a>
     </footer>
 
@@ -76,12 +651,10 @@
             }
         }
         $(function() {
-            showText("#desc", "User Interface Designer", 0, 100);
+            showText("#desc ", "User Interface Designer ", 0, 100);
         }); <
         script >
+< /body>
 
-            <
-            /body>
 
-        <
-        /html>
+    < /html>  -->

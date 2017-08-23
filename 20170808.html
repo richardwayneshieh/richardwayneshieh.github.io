@@ -1,0 +1,127 @@
+<!DOCTYPE  html>
+
+<head>
+    <!-- 引用D3 -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+
+<body>
+    <!-- 熟悉d3练习 -->
+    <!-- <div id="chart">
+        <svg width="300" height="200"> -->
+    <!-- 注意级层关系，svg对级层要求严格 -->
+    <!-- <circle r=20 cx="50" cy="150"></circle> -->
+    <!-- 平移，<g>包着哪些，对哪些有效果 -->
+    <!-- <g transform="translate(20,20)">
+            <circle r=20 cx="100" cy="100"></circle>
+            <circle r=20 cx="50" cy="20"></circle> -->
+    <!-- 旋转，（）内是角度 -->
+    <!-- <g transform="rotate(30)">
+            <rect width="150" height="20" x="10" y="50"> </rect>
+            </g> -->
+    <!-- 效果叠加 -->
+    <!-- <g transform="translate(10,10) rotate(30)">
+            <text y="120" x="20">my text</text>
+            </g>
+            </g>
+        </svg> -->
+
+    <!-- 画点的动画 -->
+    <div id="chart">
+        <svg width="300" height="200"></svg>
+    </div>
+    <script>
+        var svg = d3.select("#chart svg")
+            // svg
+            //     .append("circle")
+            //     .attr("cx",50)
+            //     .attr("cy",160)
+            //     .attr("r",10)
+        var data = [{
+            country: "a",
+            GDP: 120,
+            life: 30,
+            population: 50,
+        }, {
+            country: "b",
+            GDP: 50,
+            life: 50,
+            popution: 100,
+        }, {
+            country: "c",
+            GDP: 200,
+            life: 80,
+            popution: 100,
+        }];
+        var data2 = [{
+            country: "a",
+            GDP: 30,
+            life: 30,
+            population: 50,
+        }, {
+            country: "b",
+            GDP: 40,
+            life: 20,
+            popution: 100,
+        }, {
+            country: "d",
+            GDP: 10,
+            life: 50,
+            popution: 100,
+        }];
+        //  var data3 = [{
+        //     country: "a",
+        //     GDP: 30,
+        //     life: 30,
+        //     population: 50,
+        // }, {
+        //     country: "b",
+        //     GDP: 40,
+        //     life: 20,
+        //     popution: 100,
+        // }, {
+        //     country: "d",
+        //     GDP: 10,
+        //     life: 50,
+        //     popution: 100,
+        // }];
+        function updateChart(data) {
+            var circles = svg
+                .selectAll("circle")
+                .data(data, function(d, i) {
+                    return d["country"]
+                })
+            circles
+                .enter()
+                .append("circle")
+                .merge(circles)
+                .transition()
+                .attr("r", 10)
+                .attr("cx", function(d, i) {
+                    // console.log(d)
+                    // console.log(i)
+                    return d["GDP"]
+                })
+                .attr("cy", function(d, i) {
+                    // console.log(d)
+                    // console.log(i)
+                    return d["life"]
+                })
+            circles
+                .exit()
+                .transition()
+                .style("fill", "rgba(0,0,0,0.5)")
+                .on("end", function() {
+                    d3.select(this).remove()
+                })
+        }
+        updateChart(data)
+        setTimeout(function() {
+            updateChart(data2)
+        }, 3000)
+    </script>
+
+
+</body>
+
+</html>

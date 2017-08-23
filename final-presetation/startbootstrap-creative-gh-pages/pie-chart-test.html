@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src="echarts.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 700px;height:300px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        option = {
+            angleAxis: {},
+            radiusAxis: {
+                type: 'category',
+                data: ['广东', '一圈层', '二圈层', '更远'],
+                z: 10
+            },
+            polar: {},
+            series: [{
+                type: 'bar',
+                data: [1, 2, 3, 4],
+                coordinateSystem: 'polar',
+                name: 'A',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [2, 4, 6, 8],
+                coordinateSystem: 'polar',
+                name: 'B',
+                stack: 'a'
+            }, {
+                type: 'bar',
+                data: [1, 2, 3, 4],
+                coordinateSystem: 'polar',
+                name: 'C',
+                stack: 'a'
+            }],
+            legend: {
+                show: true,
+                data: ['A', 'B', 'C']
+            }
+        };
+        myChart.setOption(option);
+    </Script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Richard</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Richard Shieh,Await Respectfully">
+    <meta name="author" content="Richar Shieh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <link href="richardwayneshieh.github.io\bootstrap-3.3.7-dist\css\hover-min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="bootstrap-3.3.7-dist\css\hover.css" rel="stylesheet" media="all">
+    <script src="fullPage.js-master\fullPage.js-master\dist\jquery.fullpage.min.js"></script>
+    <link rel="stylesheet" href="fullPage.js-master\fullPage.js-master\dist\jquery.fullpage.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+    <style>
+        .fullpage {
+            background-color: blue;
+            height: 730px;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            display: block;
+        }
+        
+        .fullpage main.container {
+            display: block;
+            background-color: brown;
+            color: red;
+            position: absolute;
+            top: 38%;
+            left: 11.5%;
+            background-clip: content-box;
+        }
+        
+        .fullpage main.container section.content h1 {
+            color: #21211f;
+            /* padding: 0; */
+            letter-spacing: -0.2rem;
+            font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 6.1em;
+            /* border: 0;
+            vertical-align: baseline;
+            margin: 0; */
+        }
+        
+        .fullpage main.container section.content a {
+            /* text-align: left; */
+            /* margin: 0 auto; */
+            display: inline-block;
+            width: auto;
+            font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+            font-style: normal;
+            font-weight: 300;
+            background: #e22a25;
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .fullpage main.container section.content p {
+            color: #21211f;
+            font-size: 1.03rem;
+            /* line-height: 0; */
+            letter-spacing: 0.135rem;
+            /* margin: -0.35rem 0 0 0; */
+            /* padding: 0 0 0 14.3rem; */
+            font-family: monospace;
+            font-style: normal;
+            /* font-weight: 400; */
+            display: inline-block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="fullpage">
+        <main class="container">
+            <section class="content">
+                <h1>Richard.W.Shieh</h1>
+                <a href=" mailto:richard.w.shieh@hotmail.com " class="hvr-bounce-to-right" title="Email Richard Shieh ">Contact</a>
+                <!-- <p> Await Respectfully !</p> -->
+            </section>
+        </main>
+    </div>
+    <script>
+        d3.json("china.json", function(error, root) {
+            if (error)
+                return console.error(error);
+            console.log(root.features);
+            svg.selectAll("path")
+                .data(root.features)
+                .enter()
+                .append("path")
+                .attr("stroke", "#000")
+                .attr("stroke-width", 1)
+                .attr("fill", function(d, i) {
+                    return color(i);
+                })
+                .attr("d", path) //使用地理路径生成器
+                .on("mouseover", function(d, i) {
+                    d3.select(this)
+                        .attr("fill", "yellow");
+                })
+                .on("mouseout", function(d, i) {
+                    d3.select(this)
+                        .attr("fill", color(i));
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>

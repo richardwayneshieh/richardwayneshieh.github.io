@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="shenzhen food map">
+    <meta name="Richard" content="Read ShenZhen In The Name Of Food">
+
+    <title>Read ShenZhen - In The Name Of Food</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <!-- Plugin d3 -->
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <!-- echart -->
+    <script src="echarts.js"></script>
+    <script src="china.js"></script>
+    <script src="shenzhen.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="zrender\src\tool\color.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#page-top">Let's find food,find ShenZhen</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!-- <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Read ShenZhen <br/><em>—— In The Name Of Food</em></h1>
+                <hr>
+                <p>Food plays an indispensable role in people's life. In a young and busy city like Shenzhen, the delicious food soothes the tired body and mind again and again in the immigrant city.Each city has its own flavor, and food also conveys the
+                    temperature of the city. </br>Instead of using academic functional zoning and cold modern architecture to learn about cities, we try to understand the city from a warmer and more intimate perspective. </br>To read Shenzhen, in the
+                    name of food ...
+                </p>
+                <a class="btn btn-primary btn-xl" href="#about">To Uncover</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <h2 class="section-heading text-white" style="text-align:center">Find Out !</h2>
+        <hr class="light">
+        <p class="text-faded" style="text-align:center">The distribution of the catering industry in Shenzhen can describe the outline of Shenzhen. </br>Where has been built, where there are people, where there is the catering industry!</p>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-6" style="text-align:center">
+                    <img class="img-fluid" src="img\catering_distribution\food_data11.gif" widt="inherit" alt=""> -->
+        <!-- <p class="text-faded" style="text-align:center">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
+        <!-- <a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a> -->
+        <!-- </div>
+            </div>
+        </div>  -->
+        <div class="call-to-action bg-white" style="text-align:center">
+            <!-- <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading"> Let 's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-lg-3  mx-auto col-sm-6">
+                    <!-- <div class="col-lg-8 mx-auto text-center"> -->
+                    <h2 class="section-heading"> Data </br>Interpretation!</h2>
+                    <hr class="primary">
+                    </br>
+                    <div>
+                        <p> The data used include data from "DaZhongDianPing" and data from the government's statistical yearbook.Obtain the information of restaurant industry's name, geographical coordinates, cuisine, classification and so onThe total number
+                            of data is over 120 thousand, and some charts are made of some data.The chart on the right shows the visualization of all the restaurants' geographical locations and clearly depicts the contours of the city of Shenzhen.It can
+                            be seen that catering industry follows the construction and development of the city.Catering industrycan reflect the general situation of the city</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8 mx-auto text-center">
+                    <img class="img-fluid" src="img\catering_distribution\food_data11.gif" widt="inherit" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading"> Food Validates City Structure!</h2>
+                    <hr class="primary">
+                    <p> The distribution of the catering industry can not only describe the urban profile, but also analyze the urban structure simply.The distribution of catering industry is the place where cities have been developed and built. The more
+                        intensive the distribution of catering industry, the greater the intensity of urban development; similarly, the more intensive distribution of catering industry, the higher the degree of mixing of urban land use,and it also means
+                        that people can meet more types of social activities.</p>
+                </div>
+            </div>
+            <!-- <img class="img-fluid" src="img\catering_distribution\food_data11.gif" widt="inherit" alt="">
+            <div class="col-lg-4 mx-auto text-left">
+                <h2 class="section-heading"> Let 's Get In Touch!</h2>
+                <hr class="primary">
+                <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            </div>
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading"> Let 's Get In Touch!</h2>
+                <hr class="primary">
+                <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <div class="col-lg-4 mx-auto text-left">
+                    <h2 class="section-heading"> Let 's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="container-fluid">
+                    <div class="row no-gutter popup-gallery">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="img\catering_distribution\construction_aera.gif">
+                                <img class="img-fluid" src="img\catering_distribution\construction_aera.gif" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            space distribution of catering
+                                            <br>&
+                                        </div>
+                                        <div class="project-name">
+                                            construction land
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="img\catering_distribution\intensity.gif">
+                                <img class="img-fluid" src="img\catering_distribution\intensity.gif" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Space Distribution Of Catering
+                                            <br>&
+                                        </div>
+                                        <div class="project-name">
+                                            Land Development Intensity
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="img\catering_distribution\diversity.gif">
+                                <img class="img-fluid" src="img\catering_distribution\diversity.gif" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            space distribution of catering
+                                            <br>&
+                                        </div>
+                                        <div class="project-name">
+                                            Land Use Mixing Degree
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
+            <!-- <a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a> -->
+            <!-- </div> -->
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Data Analysis </h2>
+                    <hr class="primary">
+                    <p>The data analysis is based on Shenzhen Distric. From the perspective of catering industry category, cuisine, and combined with the population data, including the end of the year resident population, non-registered population, as well
+                        as the administrative area of the district to statistics and analyze.</p>
+                    </br>
+                    </br>
+                    </br>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <!-- <section class="p-0" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+        <section class="p-0" id="portfolio">
+            <div class="call-to-action bg-dark">
+                <div id="map" style="width: inherit;height:600px;"></div>
+
+                <div class="container text-center">
+                    <h2>Statistics Of Catering Industry In ShenZhen!</h2>
+                    <p> The composition of catering industry in Shenzhen all districts is similar, but the development of catering industry is quite different.</p>
+
+                    <!-- <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> 
+             <div class="container text-center"> -->
+                </div>
+                <!-- <div class="col-lg-12 col-sm-6" style="text-align:center">   -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h2 class="section-heading"> Data Decryption!</h2>
+                            <hr class="primary">
+                            <p> Do you know where people like to drink coffee in Shenzhen? Where do they like tea best? Where do people like baking best? Where do people like dessert best?Which dish is the most popular...</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <!-- <div class="col-lg-8 mx-auto text-center"> -->
+                            <h2 class="section-heading"> Tea or Coffee!</h2>
+                            <!-- <hr class="primary"> -->
+                            <p>The chart counts two quantities, one is the density of the store, indicating popularity, and the other is how many individuals each shop serves on the average, suggesting saturation and business opportunities.</br>Coffee and
+                                tea are more popular in Futian and Nanshan District.And In Baoan and Longgang District, there is still huge market potential</p>
+                        </div>
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div id="coffee" style="width:inherit;height:300px;"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <h2 class="section-heading"> Baking and Dessert!</h2>
+                            <!-- <hr class="primary"> -->
+                            <p>Using the same method to analyse the data of bakery and dessert shops in different districts.The results show that the distribution of bakery is relatively balanced. Nanshan District is a high-tec industry district ,there may
+                                be fewer women in the industry, so there is less demand for desserts.
+                            </p>
+                        </div>
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div id="cake" style="width:100%;height:300px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div id="cn" style="width:inherit;height:300px;"></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <!-- <div class="col-lg-8 mx-auto text-center"> -->
+                            <h2 class="section-heading"> Which kind of Chinese food is most popular?</h2>
+                            <!-- <hr class="primary"> -->
+                            <p> Taking Guangdong as the center, the main cuisines of major provinces are listed in the circle. Try to find people's favorite local cuisine, and estimate which region are immigrants from through food preferences.<br>The results
+                                show that people like Sichuan cuisine most. Sichuan cuisine, Hunan cuisine and Guangdong cuisine account for most of the catering industry in Shenzhen.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <div id="cn_part" style="width: inherit;height:300px;"></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <h2 class="section-heading"> Where do people come from?</h2>
+                            <!-- <hr class="primary"> -->
+                            <p> Remove data interference from the most popular cuisines.</br>From Fujian region to the distant regions of Jiangsu,Zhejiang,Anhui and Hubei provinces, to farther northeast, northwest and Yungui regions. Data suggest that the
+                                Northeast and Northwest cuisine are more popular in Shenzhen. We suspect that there are more people from these places in Shenzhen. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading"> To Know More!</h2>
+                        <hr class="primary">
+                        <p> The chart statistics several major fast-food brands in Shenzhen, including KFC,MacDonald,PizzaHut,YongHe, and combines the number of non-registered population in different districts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mx-auto text-center">
+                        <div id="fast_food" style="width:100%;height:400px;"></div>
+                        </br>
+                        <p> The results show that KFC is the most sensitive to the market, and its distribution can best indicate the overall development of the fast-food industry.In addition, the fast-food industry coincides with the non-registered population
+                            in all districts.</br>We speculate that the main target of the fast food industry is non-registered population. Baoan District has the largest population of non-registered residents, followed by Longgang</p>
+                        <!-- <div class="col-lg-2 mx-auto text-center">
+                        <h2 class="section-heading"> Let 's Get In Touch!</h2>
+                        <hr class="primary">
+                        <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    </div> -->
+                        <!-- <i class="fa fa-phone fa-3x sr-contact"> </i>
+                    <p> 123 - 456 - 6789
+                    </p> -->
+
+                    </div>
+                </div>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading"> What's the most popular foreign dish?</h2>
+                        <!-- <hr class="primary"> -->
+                        <!-- <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
+                    </div>
+                </div>
+                <!-- <div class="col-lg-8 mr-auto text-center"> -->
+                <div class="row">
+                    <div class="col-lg-12 mx-auto text-center">
+                        <div id="foreign" style="width:100%;height:400px;"></div>
+                        <p> The results show that among the most popular foreign dishes top5, Japanese food comes first, followed by Korean food.</br>
+                            This is closely related to the popular culture of Japan and Korea in Shenzhen</p>
+                        </br>
+                        </br>
+                        <h2> That's All</br>
+                            </br>THANK YOU !</h2>
+                        <!-- <i class="fa fa-envelope-o fa-3x sr-contact">  </i>
+                    <p>
+                        <a href="mailto:your-email@your-domain.com"> feedback @startbootstrap.com
+                                                                            </a>
+                    </p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div id="foreign" style="width:1000px;height:400px;"></div>
+    <div id="fast_food" style="width: 1000px;height:400px;"></div> -->
+        <!-- <section class="p-0" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+        <!-- <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading"> Let 's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p> Ready to start your next project with us ? That 's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"> </i>
+                    <p> 123 - 456 - 6789
+                    </p>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact">  </i>
+                    <p>
+                        <a href="mailto:your-email@your-domain.com"> feedback @startbootstrap.com
+                                                                            </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js">
+        </script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/creative.min.js"></script>
+        <!-- plugin echarts -->
+        <script src="charts_map.js"></script>
+        <script src="charts_coffee.js"></script>
+        <script src="charts_cake.js"></script>
+        <script src="charrts_cn.js"></script>
+        <script src="charts_cn_part.js"></script>
+        <script src="charts_foreign.js"></script>
+        <script src="charts_fast.js"></script>
+</body>
+
+</html>

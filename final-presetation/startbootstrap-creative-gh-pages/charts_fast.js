@@ -1,0 +1,288 @@
+ var myChart = echarts.init(document.getElementById('fast_food'));
+
+ // 指定图表的配置项和数据
+ option = {
+     toolbox: {
+         feature: {
+             dataView: {
+                 show: true,
+                 readOnly: false
+             },
+             restore: {
+                 show: true
+             },
+             saveAsImage: {
+                 show: true
+             }
+         }
+     },
+     tooltip: {
+         trigger: 'axis',
+         lineStyle: {
+             type: 'dashed',
+             width: 1
+         }
+     },
+     backgroundColor: "",
+     color: ['#ec4863', '#ffd285', '#ff733f', '#a73e5c', '#546570', '#749f83'],
+
+     title: [{
+         text: 'Market Distribution Of Fast Food',
+         left: '1%',
+         top: '3%',
+         textStyle: {
+             // color: '#ffd285'
+         }
+     }, {
+         text: 'The Largest&Smallest Market Share',
+         left: '83%',
+         top: '6%',
+         textAlign: 'center',
+         textStyle: {
+             // color: '#ffd285'
+         }
+     }],
+     tooltip: {
+         trigger: 'axis'
+     },
+     legend: {
+         // x: 300,
+         x: "center",
+         top: 'bottom',
+         // top: '7%',
+         textStyle: {
+             // color: '#ffd285',
+         },
+         data: ['KFC', 'MacDonald', 'Pizza Hut', 'YongHe', 'Quantity Of Fast Food Stores', 'Number Of Non-Registered Population(十万)']
+     },
+     grid: {
+         left: '',
+         right: '35%',
+         top: '16%',
+         bottom: '6%',
+         containLabel: true
+     },
+     xAxis: {
+         type: 'category',
+         axisLabel: {
+             textStyle: {
+                 fontFamily: 'sans-serif',
+                 fontWeight: 'bold'
+             }
+         },
+         "axisLine": {
+             lineStyle: {
+                 // color: '#c0576d'
+             }
+         },
+         "axisTick": {
+             "show": false
+         },
+         axisLabel: {
+             textStyle: {
+                 fontFamily: 'sans-serif',
+                 fontWeight: 'bold'
+             }
+         },
+         // boundaryGap: false,
+         data: ['BaoAn', 'FuTian', 'LongGang', 'LuoHu', 'NanShan', 'YanTian']
+     },
+     yAxis: [{
+             type: "value",
+             name: "",
+             splitLine: {
+                 show: true,
+                 lineStyle: {
+                     color: '#ccc',
+                     type: 'dashed',
+                     width: 0.5
+                 }
+             },
+             axisLabel: {
+                 textStyle: {
+                     fontFamily: 'sans-serif',
+                 }
+             },
+             position: "left",
+             mix: 0,
+             max: 70,
+             // interval: 20,
+             axisLabel: {
+                 formatter: '{value} '
+             }
+         },
+
+     ],
+     series: [{
+             name: 'KFC',
+             smooth: true,
+             type: 'line',
+             symbolSize: 5,
+             // symbol: 'circle',
+             data: [70, 33, 36, 24, 33, 6]
+         }, {
+             name: 'MacDonald',
+             smooth: true,
+             type: 'line',
+             symbolSize: 5,
+             // symbol: 'circle',
+             data: [56, 32, 40, 28, 28, 4]
+         }, {
+             name: 'Pizza Hut',
+             smooth: true,
+             type: 'line',
+             symbolSize: 5,
+             // symbol: 'circle',
+             data: [22, 22, 14, 11, 19, 3]
+         }, {
+             name: 'YongHe',
+             smooth: true,
+             type: 'line',
+             symbolSize: 5,
+             // symbol: 'circle',
+             data: [9, 1, 2, 2, 2, 2]
+         }, {
+             name: 'Quantity Of Fast Food Stores',
+             label: {
+                 normal: {
+                     show: true,
+                     position: 'top',
+                 }
+             },
+             smooth: true,
+             type: 'bar',
+             // barGap: '-50%',
+             barWidth: 15,
+             symbolSize: 5,
+             // symbol: 'bar',
+             data: [40, 14, 16, 7, 10, 1]
+         }, {
+             name: 'Number Of Non-Registered Population(/100000)',
+             label: {
+                 normal: {
+                     show: true,
+                     position: 'top',
+                 }
+             },
+             smooth: true,
+             type: 'bar',
+             // barGap: '-50%',
+             barWidth: 15,
+             symbolSize: 5,
+             // symbol: 'bar',
+             // data: [403, 52, 193, 39, 43, 16]
+             data: [40, 5, 19, 4, 4, 2]
+         },
+
+         {
+             type: 'pie',
+             center: ['83%', '33%'],
+             radius: ['25%', '30%'],
+             label: {
+                 normal: {
+                     position: 'center'
+                 }
+             },
+
+
+             data: [{
+                 value: 4102,
+                 name: '保安快餐总量',
+                 itemStyle: {
+                     normal: {
+                         color: '#b04459'
+                     }
+                 },
+                 label: {
+                     normal: {
+                         formatter: '{d} %',
+                         textStyle: {
+                             color: '#b04459',
+                             fontSize: 20
+
+                         }
+                     }
+                 }
+             }, {
+                 value: 5047,
+                 name: '快餐总量（不含宝安）',
+                 tooltip: {
+                     show: false
+                 },
+                 itemStyle: {
+                     normal: {
+                         color: '#aaaaaa'
+                     }
+                 },
+                 label: {
+                     normal: {
+                         textStyle: {
+                             color: '#b04459',
+                         },
+                         formatter: '\nBaoAn'
+                     }
+                 }
+             }]
+         },
+
+
+         {
+             type: 'pie',
+             center: ['83%', '72%'],
+             radius: ['25%', '30%'],
+             label: {
+                 normal: {
+                     position: 'center'
+                 }
+             },
+             data: [{
+                 value: 103,
+                 name: '盐田快餐总量',
+                 itemStyle: {
+                     normal: {
+                         color: '#ff733f'
+                     }
+                 },
+                 label: {
+                     normal: {
+                         formatter: '{d} %',
+                         textStyle: {
+                             color: '#ff733f',
+                             fontSize: 20
+
+                         }
+                     }
+                 }
+             }, {
+                 value: 9046,
+                 name: '快餐总量（不含盐田）',
+                 tooltip: {
+                     show: false
+                 },
+                 itemStyle: {
+                     normal: {
+                         // color: '#b04459'
+                         color: '#aaaaaa',
+
+                     }
+                 },
+                 label: {
+                     normal: {
+                         textStyle: {
+                             color: '#ff733f',
+                         },
+                         formatter: '\nYanTian'
+                     }
+                 }
+             }]
+         }
+     ]
+ }
+ myChart.setOption(option);
+
+ $(window).on('resize', function() {
+     if (chart != null && chart != undefined) {
+         chart.resize();
+         console.log(chart);
+     }
+ });
