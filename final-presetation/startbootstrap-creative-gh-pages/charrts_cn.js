@@ -91,6 +91,22 @@
          name: 'BaoAn',
          type: 'bar',
          stack: '总量',
+         barWidth: 12,
+         itemStyle: {
+             normal: {
+                 barBorderRadius: 5,
+                 //  color: new echarts.graphic.LinearGradient(
+                 //      0, 0, 0, 1, [{
+                 //          offset: 0,
+                 //          color: '#43eec6'
+                 //      }, {
+                 //          offset: 1,
+                 //          color: '#14c8d4'
+                 //      }]
+                 //  )
+
+             }
+         },
          label: {
              normal: {
                  show: false,
@@ -102,6 +118,22 @@
          name: 'FuTian',
          type: 'bar',
          stack: '总量',
+         barWidth: 12,
+         itemStyle: {
+             normal: {
+                 barBorderRadius: 5,
+                 //  color: new echarts.graphic.LinearGradient(
+                 //      0, 0, 0, 1, [{
+                 //          offset: 0,
+                 //          color: '#43eec6'
+                 //      }, {
+                 //          offset: 1,
+                 //          color: '#14c8d4'
+                 //      }]
+                 //  )
+
+             }
+         },
          label: {
              normal: {
                  show: false,
@@ -113,6 +145,22 @@
          name: 'LuoGang',
          type: 'bar',
          stack: '总量',
+         barWidth: 12,
+         itemStyle: {
+             normal: {
+                 barBorderRadius: 5,
+                 //  color: new echarts.graphic.LinearGradient(
+                 //      0, 0, 0, 1, [{
+                 //          offset: 0,
+                 //          color: '#43eec6'
+                 //      }, {
+                 //          offset: 1,
+                 //          color: '#14c8d4'
+                 //      }]
+                 //  )
+
+             }
+         },
          label: {
              normal: {
                  show: false,
@@ -124,6 +172,22 @@
          name: 'LuoHu',
          type: 'bar',
          stack: '总量',
+         barWidth: 12,
+         itemStyle: {
+             normal: {
+                 barBorderRadius: 5,
+                 //  color: new echarts.graphic.LinearGradient(
+                 //      0, 0, 0, 1, [{
+                 //          offset: 0,
+                 //          color: '#43eec6'
+                 //      }, {
+                 //          offset: 1,
+                 //          color: '#14c8d4'
+                 //      }]
+                 //  )
+
+             }
+         },
          label: {
              normal: {
                  show: false,
@@ -135,6 +199,22 @@
          name: 'NanShan',
          type: 'bar',
          stack: '总量',
+         barWidth: 12,
+         itemStyle: {
+             normal: {
+                 barBorderRadius: 5,
+                 //  color: new echarts.graphic.LinearGradient(
+                 //      0, 0, 0, 1, [{
+                 //          offset: 0,
+                 //          color: '#43eec6'
+                 //      }, {
+                 //          offset: 1,
+                 //          color: '#14c8d4'
+                 //      }]
+                 //  )
+
+             }
+         },
          label: {
              normal: {
                  show: false,
@@ -146,6 +226,22 @@
          name: 'YanTian',
          type: 'bar',
          stack: '总量',
+         barWidth: 12,
+         itemStyle: {
+             normal: {
+                 barBorderRadius: 5,
+                 //  color: new echarts.graphic.LinearGradient(
+                 //      0, 0, 0, 1, [{
+                 //          offset: 0,
+                 //          color: '#43eec6'
+                 //      }, {
+                 //          offset: 1,
+                 //          color: '#14c8d4'
+                 //      }]
+                 //  )
+
+             }
+         },
          label: {
              normal: {
                  show: false,
